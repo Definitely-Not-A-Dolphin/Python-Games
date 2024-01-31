@@ -1,0 +1,14 @@
+print("Welcome to the Ultimate Smiley Creator! Lets make your own Smiley! Please enter your characters at the correct location!")
+Eyes = input("Enter your eyes here: ")
+Mouth = input("Enter your mouth here: ")
+Eyebrows = input("Enter your eyebrows here (type 'none' if you do not want any): ")
+
+if(Eyebrows):
+    print(">\nYou are now done. The machine has now made your smiley!")
+
+if(Eyes):
+    if(Mouth):
+        if(Eyebrows != "none"):
+            print( ">\n",Eyebrows+Eyes+Mouth)
+        if(Eyebrows == "none"):
+            print( ">\n",Eyes+Mouth)
